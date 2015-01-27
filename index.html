@@ -7,14 +7,19 @@
 <body class="parent">
 <script type="text/javascript" src="rpf.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<div>
+<link rel="stylesheet" type="text/css" href="hover.css" media="all" />
+<div class="child">
 <h1>Rock, Paper, Fireball</h1>
-<img draggable="false"  src="assets/rock.svg" onclick="play('rock');" height="200" width="200">
-<img draggable="false"  src="assets/paper.svg" onclick="play('paper');" height="200" width="200"/>
-<img draggable="false"  src="assets/fireball.svg" onclick="play('fireball');" height="200" width="200"/>
+<img draggable="false" src="assets/rock.svg" class="hvr-buzz-out" onclick="play('rock');" height="200" width="200">
+<img draggable="false" src="assets/paper.svg" class="hvr-buzz-out" onclick="play('paper');" height="200" width="200"/>
+<img draggable="false" src="assets/fireball.svg" class="hvr-buzz-out" onclick="play('fireball');" height="200" width="200"/>
 
+
+<!-- status from rpf.js:   document.getElementById("status")-->
 <div id="status" class="statusstyle">CLICK ON YOUR WEAPON OF CHOICE</div>
+<!-- player's score from rpf.js:  document.getElementById("pscore")-->
 <div id="pscore" class="pscorestyle">PLAYER SCORE: 0</div>
+<!-- computer's score from rpf.js:  document.getElementById("cscore")-->
 <div id="cscore" class="cscorestyle">COMPUTER SCORE: 0</div>
 <div><button onclick = location.reload();>Restart</button></div>
 </div>
