@@ -1,3 +1,4 @@
+//(function () {
 var playerScore = 0; // scores start at 0 to keep track
 var computerScore = 0;
 var gamestatus = ""; // string container to hold game status win/lose
@@ -78,3 +79,4 @@ function play(user){
   document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
   
 }
+//})();
