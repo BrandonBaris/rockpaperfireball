@@ -1,54 +1,68 @@
 var playerScore = 0;
-var computerScore = 0; //starts at 0
 
-function play (user){
-  var computer = Math.round(Math.random() * 2); // chooses 0 1 or 2?
-
+var computerScore = 0;
+var gamestatus = "";
+var noRock = 0;
+var noPaper = 0;
+var noFireball = 0;
+var stopstreaking = 5; // amount of times player can choose same type
+var playerchoice;
+function play(user){
+  var computer = Math.round(Math.random()*2);
   var player;
-  var gamestatus = ""; 
-  console.log(computer); // calls the function computer as a variable??
 
+  console.log(computer);
 
-  if (user === "rock") {
-      player = 0;
-      console.log("0");
-      // if user types in "rock" displays 0   
-  } else if (user === "paper") {
-     player = 1;
-     console.log("1");
-     // if user types in "paper" displays 1   
-  } else if (user === "fireball") {
-      player = 2;
-      console.log("2");    
+  if(user === 'rock'){
+    playerchoice = "rock";
+    player = 0;
+    noRock++;
+    noPaper = 0;
+    noFireball = 0;
+  } else 
+  if (user === 'paper'){
+    playerchoice = "paper";
+    player = 1;
+    noRock = 0;
+    noPaper++;
+    noFireball = 0;
   } else {
-      console.log("SORRY CANT UNDERSTAND");
-  }
+    playerchoice = "fireball";
+    player = 2;
+    noRock = 0;
+    noPaper = 0;
+    noFireball++;
+  } 
 
-  // Matrix of 0 : TIE , 
-  // CPUvsME:Player v----MINUS the Computer's choice = 0, 1, -1, 2, or -2 for the CASES
-  switch (player-computer){
-    case -2: //win
-      gamestatus = "WIN";
-      playerScore++;
-      break;
-    case -1: //lose
-      gamestatus = "LOSE";
-      computerScore++;
-      break;
-    case 1: // Wins
-      gamestatus = "WIN";
-      playerScore++;
-      break;
-    case 2: //Lose
-      gamestatus = "LOSE";
-      computerScore++;
-      break;
-    default: //Tie
-      gamestatus = "TRY AGAIN";
-      console.log('TRY AGAIN');
+  if (noRock > stopstreaking || noPaper > stopstreaking || noFireball > stopstreaking){
+    gamestatus = "the computer has caught on to your streaking and has countered you";
+    computerScore++;
+  } else {
+
+    switch (player-computer){
+      case -2: //win
+        gamestatus = "won";
+        playerScore++;
+        break;
+      case -1: //lose
+        gamestatus = "lost";
+        computerScore++;
+        break;
+      case 1: // Wins
+        gamestatus = "won";
+        playerScore++;
+        break;
+      case 2: //Lose
+        gamestatus = "lost";
+        computerScore++;
+        break;
+      default: //Tie
+        gamestatus = "tied";
   }
+}
+
   console.log('player: ',playerScore,' Computer: ',computerScore);
-  document.getElementById("status").innerHTML = gamestatus;
+  document.getElementById("status").innerHTML = "You chose " + playerchoice + " and " + gamestatus + ".  Click a button to play again!";
   document.getElementById("pscore").innerHTML = "PLAYER SCORE: " + playerScore;
   document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
 }
