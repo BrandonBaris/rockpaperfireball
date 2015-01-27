@@ -3,7 +3,8 @@ var computerScore = 0; //starts at 0
 
 function play (user){
   var computer = Math.round(Math.random() * 2); // chooses 0 1 or 2?
-  var player; 
+  var player;
+  var gamestatus = ""; 
   console.log(computer); // calls the function computer as a variable??
 
   if (user === "rock") {
@@ -17,7 +18,7 @@ function play (user){
   } else if (user === "fireball") {
       player = 2;
       console.log("2");    
-  } else
+  } else {
       console.log("SORRY CANT UNDERSTAND");
   }
 
@@ -44,5 +45,8 @@ function play (user){
       console.log("Try Again");  
   }
   // This is the final printed to see the scores for each variable within the play function
-  console.log("Player: ",playerScore," Computer: ", computerScore);
+console.log('player: ',playerScore,' Computer: ',computerScore);
+  document.getElementById("status").innerHTML = gamestatus;
+  document.getElementById("pscore").innerHTML = "PLAYER SCORE: " + playerScore;
+  document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
 }
