@@ -34,7 +34,7 @@ function play(user){
     noFireball++; // if player chooses fireball +1 to their fireball counter, and resets rock and paper
   } 
 
-  // AI algorithm
+  // AI algorithm is less than 5
   if (noRock > stopstreaking || noPaper > stopstreaking || noFireball > stopstreaking){
     gamestatus = "the computer has caught on to your streaking and has countered you";
     computerScore++;
