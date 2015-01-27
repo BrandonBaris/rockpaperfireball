@@ -41,23 +41,23 @@ function play(user){
   } else {
 
     switch (player-computer){ // compares the player value against the random computer value
-      case -2: //win
+      case -2: //win (player - computer = -2)
         gamestatus = "won";
         playerScore++;
         break;
-      case -1: //lose
+      case -1: //lose (player - computer = -1)
         gamestatus = "lost";
         computerScore++;
         break;
-      case 1: // Wins
+      case 1: // Wins (player - computer = 1)
         gamestatus = "won";
         playerScore++;
         break;
-      case 2: //Lose
+      case 2: //Lose (player - computer = 2)
         gamestatus = "lost";
         computerScore++;
         break;
-      default: //Tie
+      default: //Tie (player - computer = 0) default is needed in switch?
         gamestatus = "tied";
   }
 }
