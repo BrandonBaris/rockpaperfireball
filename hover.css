@@ -1,105 +1,105 @@
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
   10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(30px) rotate(20deg);
+    transform: translateX(30px) rotate(20deg);
   }
 
   20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-30px) rotate(-20deg);
+    transform: translateX(-30px) rotate(-20deg);
   }
 
   30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(30px) rotate(20deg);
+    transform: translateX(30px) rotate(20deg);
   }
 
   40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-30px) rotate(-20deg);
+    transform: translateX(-30px) rotate(-20deg);
   }
 
   50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
+    -webkit-transform: translateX(20px) rotate(10deg);
+    transform: translateX(20px) rotate(1deg);
   }
 
   60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
+    -webkit-transform: translateX(-20px) rotate(-10deg);
+    transform: translateX(-20px) rotate(-1deg);
   }
 
   70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
+    -webkit-transform: translateX(20px) rotate(10deg);
+    transform: translateX(20px) rotate(1deg);
   }
 
   80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
+    -webkit-transform: translateX(-20px) rotate(-10deg);
+    transform: translateX(-20px) rotate(-1deg);
   }
 
   90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
+    -webkit-transform: translateX(10px) rotate(0);
+    transform: translateX(10px) rotate(0);
   }
 
   100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
+    -webkit-transform: translateX(-10px) rotate(0);
+    transform: translateX(-10px) rotate(0);
   }
 }
 
 @keyframes hvr-buzz-out {
   10% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(30px) rotate(20deg);
+    transform: translateX(30px) rotate(20deg);
   }
 
   20% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-30px) rotate(-20deg);
+    transform: translateX(-30px) rotate(-20deg);
   }
 
   30% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(30px) rotate(20deg);
+    transform: translateX(30px) rotate(20deg);
   }
 
   40% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-30px) rotate(-20deg);
+    transform: translateX(-30px) rotate(-20deg);
   }
 
   50% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
+    -webkit-transform: translateX(20px) rotate(10deg);
+    transform: translateX(20px) rotate(1deg);
   }
 
   60% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
+    -webkit-transform: translateX(-20px) rotate(-10deg);
+    transform: translateX(-20px) rotate(-1deg);
   }
 
   70% {
-    -webkit-transform: translateX(2px) rotate(1deg);
-    transform: translateX(2px) rotate(1deg);
+    -webkit-transform: translateX(20px) rotate(1deg);
+    transform: translateX(20px) rotate(10deg);
   }
 
   80% {
-    -webkit-transform: translateX(-2px) rotate(-1deg);
-    transform: translateX(-2px) rotate(-1deg);
+    -webkit-transform: translateX(-20px) rotate(-10deg);
+    transform: translateX(-20px) rotate(-10deg);
   }
 
   90% {
-    -webkit-transform: translateX(1px) rotate(0);
-    transform: translateX(1px) rotate(0);
+    -webkit-transform: translateX(10px) rotate(0);
+    transform: translateX(10px) rotate(0);
   }
 
   100% {
-    -webkit-transform: translateX(-1px) rotate(0);
-    transform: translateX(-1px) rotate(0);
+    -webkit-transform: translateX(-10px) rotate(0);
+    transform: translateX(-10px) rotate(0);
   }
 }
 

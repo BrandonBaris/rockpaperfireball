@@ -7,11 +7,12 @@
 <body class="parent">
 <script type="text/javascript" src="rpf.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="hover.css" media="all" />
 <div class="child">
 <h1>Rock, Paper, Fireball</h1>
-<img src="assets/rock.svg" onclick="play('rock');" height="200" width="200">
-<img src="assets/paper.svg" onclick="play('paper');" height="200" width="200"/>
-<img src="assets/fireball.svg" onclick="play('fireball');" height="200" width="200"/>
+<img draggable="false" src="assets/rock.svg" class="hvr-buzz-out" onclick="play('rock');" height="200" width="200">
+<img draggable="false" src="assets/paper.svg" class="hvr-buzz-out" onclick="play('paper');" height="200" width="200"/>
+<img draggable="false" src="assets/fireball.svg" class="hvr-buzz-out" onclick="play('fireball');" height="200" width="200"/>
 
 <!-- status from rpf.js:   document.getElementById("status")-->
 <div id="status" class="statusstyle">CLICK ON YOUR WEAPON OF CHOICE</div>
