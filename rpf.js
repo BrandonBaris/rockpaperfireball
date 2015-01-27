@@ -62,7 +62,8 @@ function play(user){
 }
 
   console.log('player: ',playerScore,' Computer: ',computerScore);
-  document.getElementById("status").innerHTML = "You chose " + playerchoice + " and " + gamestatus + ".  Click a button to play again!";
+  document.getElementById("status").innerHTML = "You chose " + playerchoice + " and " + gamestatus + ".  <br>Click a button to play again!";
   document.getElementById("pscore").innerHTML = "PLAYER SCORE: " + playerScore;
   document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
+  
 }
