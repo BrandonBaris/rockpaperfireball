@@ -3,9 +3,11 @@ var computerScore = 0; //starts at 0
 
 function play (user){
   var computer = Math.round(Math.random() * 2); // chooses 0 1 or 2?
+
   var player;
   var gamestatus = ""; 
   console.log(computer); // calls the function computer as a variable??
+
 
   if (user === "rock") {
       player = 0;
@@ -24,28 +26,28 @@ function play (user){
 
   // Matrix of 0 : TIE , 
   // CPUvsME:Player v----MINUS the Computer's choice = 0, 1, -1, 2, or -2 for the CASES
-  switch (player - computer) {
-   case -2:
-      console.log("Wins");
+  switch (player-computer){
+    case -2: //win
+      gamestatus = "WIN";
       playerScore++;
       break;
-   case -1:
-      console.log("Lose");
+    case -1: //lose
+      gamestatus = "LOSE";
       computerScore++;
       break;
-    case 1:
-      console.log("Wins");
+    case 1: // Wins
+      gamestatus = "WIN";
       playerScore++;
       break;
-    case 2:
-      console.log("Lose");
+    case 2: //Lose
+      gamestatus = "LOSE";
       computerScore++;
       break;
-    default:
-      console.log("Try Again");  
+    default: //Tie
+      gamestatus = "TRY AGAIN";
+      console.log('TRY AGAIN');
   }
-  // This is the final printed to see the scores for each variable within the play function
-console.log('player: ',playerScore,' Computer: ',computerScore);
+  console.log('player: ',playerScore,' Computer: ',computerScore);
   document.getElementById("status").innerHTML = gamestatus;
   document.getElementById("pscore").innerHTML = "PLAYER SCORE: " + playerScore;
   document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
