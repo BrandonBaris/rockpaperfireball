@@ -6,6 +6,7 @@ var noPaper = 0; // counts amount of times player chooses paper
 var noFireball = 0; // counts amount of times player chooses fireball
 var stopstreaking = 5; // amount of times player can choose same type
 var playerchoice; // variable to hold the string playerchoice
+var cpuchoice;
 
 function play(user){
   var computer = Math.round(Math.random()*2); // generates a random number between 0 and 2
@@ -32,6 +33,15 @@ function play(user){
     noRock = 0; // if they choose fireball the rock counter (noRock) resets to 0
     noPaper = 0; // if they choose fireball the paper counter (noPaper) resets to 0
     noFireball++; // if player chooses fireball +1 to their fireball counter, and resets rock and paper
+  } 
+
+    if(computer === 0){ 
+    cpuchoice = "rock";  
+  } else 
+  if (computer === 1){
+    cpuchoice = "paper";
+  } else {
+    cpuchoice = "fireball";
   } 
 
   // AI algorithm is less than 5
@@ -63,7 +73,7 @@ function play(user){
 }
   //looks for the html file for tag id "status" "pscore" to change inbewteen tags for the text
   console.log('player: ',playerScore,' Computer: ',computerScore);
-  document.getElementById("status").innerHTML = "You chose " + playerchoice + " and " + gamestatus + ".  <br>Click a button to play again!";
+  document.getElementById("status").innerHTML = "You chose " + playerchoice + " and the computer chose " + cpuchoice + "<br> You have " + gamestatus + ".  <br>Click a button to play again!";
   document.getElementById("pscore").innerHTML = "PLAYER SCORE: " + playerScore;
   document.getElementById("cscore").innerHTML = "COMPUTER SCORE: " + computerScore;
   

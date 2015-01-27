@@ -1,1 +1,1 @@
-:)
+Click a button to play ROCK, PAPER, FIREBALL against the computer. :)
